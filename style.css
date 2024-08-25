@@ -1,0 +1,78 @@
+@font-face {
+    font-family: myfont;
+    src: url(fontes/Choco\ Shake.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    background-color: #2B2833;
+    font-family: myfont;
+    color: #DDD;
+}
+.calculator{
+    width: 300px;
+    background-color: rgb(170, 107, 242, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px black ;
+    overflow: hidden;
+    padding: 10px;
+} 
+.input{
+    min-height: 2.3em;
+    padding: 20px;
+    background-color: #2B2833;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 40px;
+    overflow-wrap: break-word;
+   
+}   
+.previous-operation,
+.current-operation{
+    text-align: end;
+}
+.current-operation{
+    font-size: 22px;
+}
+.previous-operation{
+    font-size: 14px;
+    color:#ccc;
+    margin-bottom: 10px;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 15px;
+}
+.numbers .zero{
+    grid-column: span 2;
+}
+.numbers div{
+    text-align: center;
+    height: 45px;
+    padding: 15px;
+    background-color: #2B2833;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.numbers div:hover{
+    background-color: rgb(170, 107, 242, 0.3);
+    box-shadow: 0px 2px 2px black;
+    transition: 0.2s;
+}
+.numbers .operadores{
+    background-color: #6746CA;
+    
+}
+.numbers .operadores:hover{
+    background-color: rgb(170, 107, 242, 0.3);
+    box-shadow: 0px 2px 2px black;
+    transition: 0.2s;
+}
